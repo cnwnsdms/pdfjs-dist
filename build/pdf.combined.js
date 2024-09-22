@@ -2538,7 +2538,6 @@ var createBlob = function createBlob(data, contentType) {
   if (typeof Blob !== 'undefined') {
     return new Blob([data], { type: contentType });
   }
-  warn('The "Blob" constructor is not supported.');
 };
 
 var createObjectURL = (function createObjectURLClosure() {
